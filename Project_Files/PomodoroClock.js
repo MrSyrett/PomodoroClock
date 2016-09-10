@@ -28,14 +28,18 @@ $(document).ready(function(){
         clearInterval(timer);
     }
     
+    var audio = new Audio('http://santak.xyz/res/pomodoro/buzzer.mp3');
+			
     function nextStep() {
       if (inSession === true) {
+        audio.play();
         timeRemaining = breakLength * 60;
         $("#clock").removeClass('clockON');
         $("#clock").addClass('clockOFF');
         inSession = false;
       } else {
         inSession = true;
+        audio.play();
         $("#clock").removeClass('clockOFF');
         $("#clock").addClass('clockON');
         timeRemaining = workingLength * 60;
