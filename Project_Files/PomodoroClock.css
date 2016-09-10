@@ -1,3 +1,67 @@
+@import 'https://fonts.googleapis.com/css?family=Rajdhani';
 .hidden{
     display: none;
+}
+body{
+    background-color: #50514F;
+    color: #F6F8FF;
+    font-family: 'Rajdhani', sans-serif;
+    
+}
+
+.container{
+    margin-top: 90px;
+    width: 400px;
+}
+h1{
+    padding: 20px;
+}
+
+button{
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+}
+
+.settingsDIS{
+    display: inline;
+}
+
+.break{
+    font-size: 30px;
+    color: #CF2D2D;
+    height: 75px;
+    width: 75px;
+    margin: 0 auto;
+    float: left;
+}
+.duration{
+    font-size: 30px;
+    color: #23CE6B;
+    height: 75px;
+    width: 75px;
+    margin: 0 auto;
+    float: right;
+}
+.controls{
+    font-size: 35px;
+}
+
+.clockON{
+    font-size: 75px;
+    border: 2px solid;
+    border-radius: 10px;
+    color: #23CE6B;
+    width: 220px;
+    margin: 0 auto;
+}
+.clockOFF{
+    font-size: 75px;
+    border: 2px solid;
+    border-radius: 10px;
+    color: #CF2D2D;
+    width: 220px;
+    margin: 0 auto;
 }

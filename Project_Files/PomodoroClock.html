@@ -12,23 +12,26 @@
         <script type="text/javascript" src="PomodoroClock.js"></script>
     </head>
     <body>
+        
         <div class="container">
-            <div class="row settingsDIS">
+            <h1 class="text-center">TOMATO | TOM&AumlTO</h1>
+            <div class="row break text-center">
                 <div id="Break">5</div>
+                 <button id="breakD1">-</button>
+                 <button id="breakU1">+</button>
+            </div>
+            <div class="row duration text-center">
                 <div id="Duration">25</div>
+                <button id="timeD1">-</button>
+                <button id="timeU1">+</button>
             </div>
-            <div class="row settingsBTNs">
-                <button id="breakU1">&uarr;</button>
-                <button id="breakD1">&darr;</button>
-                <button id="timeU1">&uarr;</button>
-                <button id="timeD1">&darr;</button>
-            </div>
-            <div class="row">
+                
+            <div class="row controls text-center">
                 <button id="engage">Start</button>
                 <button id="pause" class="hidden">Pause</button>
                 <button id="reset">Reset</button>
-                <div id="clock"></div>
             </div>
+            <div id="clock" class="clockON text-center"></div>
             </div>
         </div>
     </body>

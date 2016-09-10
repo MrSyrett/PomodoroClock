@@ -31,9 +31,13 @@ $(document).ready(function(){
     function nextStep() {
       if (inSession === true) {
         timeRemaining = breakLength * 60;
+        $("#clock").removeClass('clockON');
+        $("#clock").addClass('clockOFF');
         inSession = false;
       } else {
         inSession = true;
+        $("#clock").removeClass('clockOFF');
+        $("#clock").addClass('clockON');
         timeRemaining = workingLength * 60;
     } startPomodoro();
     }
@@ -58,6 +62,8 @@ $(document).ready(function(){
     timeRemaining = workingLength * 60;
       updateTime();    
       inSession = !inSession;
+        $("#clock").removeClass('clockOFF');
+        $("#clock").addClass('clockON');
       if (!isPaused){
         $("#pause").addClass('hidden');
         $("#engage").removeClass('hidden');  
